@@ -14,7 +14,7 @@ export const GPTDialog = () => {
             <br/>
             <button onClick={() => {
                 setLoading(true)
-                fetch("http://localhost:4321/convert", {
+                fetch("https://shakespeare-translator.vercel.app/convert", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

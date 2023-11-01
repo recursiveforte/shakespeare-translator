@@ -10,7 +10,7 @@ export const GPTDialog = () => {
                 <h1 className={"text-3xl mb-5"}>Shakespearean Text Translator</h1>
             <textarea onChange={event => {
                 setText(event.target.value)
-            }} value={text} className={"border-black border-2 h-52 p-2"}></textarea>
+            }} value={text} className={"border-black border-2 h-52 p-2"} placeholder={"Plain english text here..."}></textarea>
             <br/>
             <button onClick={() => {
                 setLoading(true)

@@ -13,8 +13,8 @@ export const POST: APIRoute = async ({request}) => {
 
     const chatCompletion = await openai.chat.completions.create({
         messages: [{ role: 'user', content: `
-        translate this text to shakesperean:
-        
+        translate this text to shakesperean. don't use any modern english words, and write in iambic pentameter:   
+             
         ${input}` }],
         model: 'gpt-3.5-turbo',
     });

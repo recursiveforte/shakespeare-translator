@@ -33,7 +33,7 @@ export const GPTDialog = () => {
             <br/>
             <div className={"border-black border-2 h-60 p-2"}>
                 {loading && <p className={"text-gray-500"}>Loading...</p>}
-                {response.split("\n").map((line, index) => <span id={index.toString()}>{line}<br/></span>)}
+                {!loading && response.split("\n").map((line, index) => <span id={index.toString()}>{line}<br/></span>)}
             </div>
                 <br/>
                 <div>Made by <a href={"https://github.com/recursiveforte"} className={"underline"}>Cheru Berhanu</a>.</div>

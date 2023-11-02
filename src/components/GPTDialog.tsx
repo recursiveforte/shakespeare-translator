@@ -31,7 +31,7 @@ export const GPTDialog = () => {
                 })
             }} className={"border-black border-2 justify-self-start w-40"}>Generate</button>
             <br/>
-            <div className={"border-black border-2 h-60 p-2"}>
+            <div className={"border-black border-2 p-2"} style={{minHeight: "15rem"}}>
                 {loading && <p className={"text-gray-500"}>Loading...</p>}
                 {!loading && response.split("\n").map((line, index) => <span id={index.toString()}>{line}<br/></span>)}
             </div>
